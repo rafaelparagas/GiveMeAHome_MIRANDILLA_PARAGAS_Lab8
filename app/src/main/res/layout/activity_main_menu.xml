@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".activity_main_menu">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Choose a Shelter"
+        android:textSize="36sp" />
+
+    <ImageButton
+        android:id="@+id/PawsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="95dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="process"
+        android:scaleType="fitXY"
+        android:src="@drawable/pawsbutton" />
+
+    <ImageButton
+        android:id="@+id/btnHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/PawsButton"
+        android:layout_marginEnd="37dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="processHappy"
+        android:scaleType="fitXY"
+        android:src="@drawable/hacbutton" />
+
+    <ImageButton
+        android:id="@+id/btnCara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PawsButton"
+        android:layout_alignTop="@+id/btnPsP"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="processCara"
+        android:scaleType="fitXY"
+        android:src="@drawable/carabutton" />
+
+    <ImageButton
+        android:id="@+id/btnPsP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnHappy"
+        android:layout_marginBottom="172dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="processPSP"
+        android:scaleType="fitXY"
+        android:src="@drawable/pscpabutton" />
+
+    <ImageButton
+        android:id="@+id/btnPSPGall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PawsButton"
+        android:layout_alignTop="@+id/btnAkf"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="processPart"
+        android:scaleType="fitXY"
+        android:src="@drawable/partbutton" />
+
+    <ImageButton
+        android:id="@+id/btnAkf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnHappy"
+        android:layout_marginBottom="14dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:onClick="processAkf"
+        android:scaleType="fitXY"
+        android:src="@drawable/akfbutton" />
+
+
+</RelativeLayout>

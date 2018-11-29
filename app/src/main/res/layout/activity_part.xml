@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".activity_part">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-90dp"
+        android:text="Philippine Animal"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="Rescue Team"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        app:srcCompat="@drawable/partbutton" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPSPGall"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="PART is founded and run by a dedicated group of volunteers committed to changing the way animals are viewed and treated, not only in the Philippines, but around the world."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnPSPGall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPspMap"
+        android:layout_centerHorizontal="true"
+        android:onClick="processGallery"
+        android:text="View Gallery" />
+
+    <Button
+        android:id="@+id/btnPspMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:onClick="processMap"
+        android:text="View Map" />
+
+    <Button
+        android:id="@+id/btnPspWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPspMap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-107dp"
+        android:onClick="onWeb"
+        android:text="Go to Website" />
+
+    <Button
+        android:id="@+id/btnPartBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPspWeb"
+        android:layout_centerHorizontal="true"
+        android:onClick="back"
+        android:text="Back to Menu Page" />
+</RelativeLayout>

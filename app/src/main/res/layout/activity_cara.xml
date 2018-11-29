@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".activity_cara">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="Compassion and Responsibility for Animals"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        app:srcCompat="@drawable/carabutton" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="210dp"
+        android:gravity="center"
+        android:text="CARA was formed in the year 2000 by a dedicated group of animal lovers determined to help the plight of animals in the Philippines."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCaraGal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCaraMap"
+        android:layout_centerHorizontal="true"
+        android:onClick="processGallery"
+        android:text="View Gallery" />
+
+    <Button
+        android:id="@+id/btnCaraMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:onClick="processMap"
+        android:text="View Map" />
+
+    <Button
+        android:id="@+id/btnCaraWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCaraMap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-107dp"
+        android:onClick="onWeb"
+        android:text="Go to Website" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCaraWeb"
+        android:layout_centerHorizontal="true"
+        android:onClick="back"
+        android:text="Back to Menu Page" />
+</RelativeLayout>
